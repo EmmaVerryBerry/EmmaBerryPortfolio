@@ -7,18 +7,23 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#home" class="logo">Emma Berry</a>
+            <a href="index.html" class="logo">
+                <svg class="logo-doodle" width="30" height="30" viewBox="0 0 30 30">
+                    <path d="M15 2 L28 15 L15 28 L2 15 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="15" cy="15" r="5" fill="currentColor"/>
+                </svg>
+                Emma Berry
+            </a>
             <ul class="nav-menu">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -28,16 +33,98 @@
         </div>
     </nav>
 
+    <!-- Doodle decorations -->
+    <svg class="doodle-decoration doodle-star-1" width="60" height="60" viewBox="0 0 60 60">
+        <path d="M30 5 L35 25 L55 30 L35 35 L30 55 L25 35 L5 30 L25 25 Z" fill="#ff9147" opacity="0.3"/>
+    </svg>
+
+    <svg class="doodle-decoration doodle-circle-1" width="80" height="80" viewBox="0 0 80 80">
+        <circle cx="40" cy="40" r="35" fill="none" stroke="#babd8d" stroke-width="3" stroke-dasharray="5,5" opacity="0.4"/>
+    </svg>
+
+    <svg class="doodle-decoration doodle-squiggle-1" width="100" height="100" viewBox="0 0 100 100">
+        <path d="M10 50 Q30 20, 50 50 T90 50" fill="none" stroke="#ff9147" stroke-width="3" opacity="0.3"/>
+    </svg>
+
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 class="hero-title">Hi, I'm <span class="gradient-text">Emma Berry</span></h1>
-            <p class="hero-subtitle">Full-Stack Developer & Designer</p>
-            <p class="hero-description">Creating beautiful, functional web experiences with React, TypeScript, and thoughtful design</p>
+            <div class="hello-badge">
+                <svg width="20" height="20" viewBox="0 0 20 20">
+                    <path d="M10 2 L12 8 L18 10 L12 12 L10 18 L8 12 L2 10 L8 8 Z" fill="currentColor"/>
+                </svg>
+                Hello, I'm
+            </div>
+            <h1 class="hero-title">
+                <span class="gradient-text">Emma Berry</span>
+                <svg class="underline-svg" viewBox="0 0 400 20">
+                    <path d="M5 15 Q100 5, 200 12 T395 10" fill="none" stroke="#ff9147" stroke-width="3"/>
+                </svg>
+            </h1>
+            <p class="hero-subtitle">Full-Stack Developer <span class="amp">&</span> Designer</p>
+            <p class="hero-description">I build beautiful, functional web experiences with React, TypeScript, and a whole lot of creativity ✨</p>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Years Coding</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">Ideas</span>
+                </div>
+            </div>
+
             <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                <a href="#projects" class="btn btn-secondary">View Projects</a>
+                <a href="projects.html" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20">
+                        <path d="M5 10 L15 10 M10 5 L15 10 L10 15" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </a>
+                <a href="contact.html" class="btn btn-secondary">
+                    <span>Let's Chat</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20">
+                        <rect x="2" y="4" width="16" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <path d="M2 6 L10 11 L18 6" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </a>
             </div>
         </div>
+
+        <!-- Illustrated character or graphic -->
+        <div class="hero-illustration">
+            <svg viewBox="0 0 400 400" class="character-svg">
+                <!-- Computer/laptop illustration -->
+                <rect x="100" y="150" width="200" height="140" rx="10" fill="#77685d" opacity="0.2"/>
+                <rect x="110" y="160" width="180" height="110" rx="5" fill="#fef9f5"/>
+                <rect x="115" y="165" width="170" height="100" fill="#babd8d" opacity="0.3"/>
+                <!-- Code lines -->
+                <line x1="130" y1="180" x2="200" y2="180" stroke="#ff9147" stroke-width="3" opacity="0.6"/>
+                <line x1="130" y1="195" x2="250" y2="195" stroke="#babd8d" stroke-width="3" opacity="0.6"/>
+                <line x1="130" y1="210" x2="180" y2="210" stroke="#ff9147" stroke-width="3" opacity="0.6"/>
+                <line x1="130" y1="225" x2="240" y2="225" stroke="#babd8d" stroke-width="3" opacity="0.6"/>
+                <!-- Keyboard base -->
+                <rect x="110" y="290" width="180" height="20" rx="3" fill="#77685d" opacity="0.3"/>
+                <!-- Coffee cup -->
+                <ellipse cx="320" cy="250" rx="20" ry="25" fill="#ff9147" opacity="0.4"/>
+                <path d="M340 240 Q350 240, 350 250" fill="none" stroke="#ff9147" stroke-width="2" opacity="0.4"/>
+                <!-- Steam -->
+                <path d="M310 220 Q305 210, 310 200" fill="none" stroke="#babd8d" stroke-width="2" opacity="0.3" class="steam"/>
+                <path d="M320 215 Q315 205, 320 195" fill="none" stroke="#babd8d" stroke-width="2" opacity="0.3" class="steam"/>
+                <path d="M330 220 Q325 210, 330 200" fill="none" stroke="#babd8d" stroke-width="2" opacity="0.3" class="steam"/>
+                <!-- Decorative stars -->
+                <path d="M80 100 L82 105 L87 107 L82 109 L80 114 L78 109 L73 107 L78 105 Z" fill="#ff9147" opacity="0.5"/>
+                <path d="M320 120 L323 127 L330 130 L323 133 L320 140 L317 133 L310 130 L317 127 Z" fill="#babd8d" opacity="0.5"/>
+                <path d="M150 320 L152 324 L156 326 L152 328 L150 332 L148 328 L144 326 L148 324 Z" fill="#ff9147" opacity="0.5"/>
+            </svg>
+        </div>
+
         <div class="hero-decoration">
             <div class="floating-shape shape-1"></div>
             <div class="floating-shape shape-2"></div>
@@ -45,221 +132,118 @@
         </div>
     </section>
 
-    <section id="about" class="about">
+    <!-- Quick About Section -->
+    <section class="quick-about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a senior at Florida State University studying Computer Science (B.S), graduating Spring 2026. As a full-stack JavaScript/TypeScript developer and designer, I've shipped real products for startups and small businesses.</p>
-                    <p>My experience spans frontend and full-stack web development, React/React Native apps, and UI/UX design. I'm comfortable working in fast-paced, early-stage environments and love collaborating directly with founders to bring ideas to life.</p>
-                    <p>Beyond coding, I'm actively involved in tech organizations including Next Gen Tech, DevLUp Game Dev, Society of Women Engineers, and I'm co-founder of Logic Calendar. I'm passionate about building real-world products that make a difference.</p>
+            <div class="quick-about-content">
+                <div class="quick-about-text">
+                    <h2>A bit about me...</h2>
+                    <p>I'm a senior at FSU studying Computer Science, graduating Spring 2026. I love building things that live on the internet - whether that's websites, apps, or anything in between.</p>
+                    <p>When I'm not coding, you'll find me designing graphics, managing tech clubs, or brainstorming the next big idea.</p>
+                    <a href="about.html" class="text-link">
+                        Read my full story
+                        <svg width="16" height="16" viewBox="0 0 16 16">
+                            <path d="M4 8 L12 8 M8 4 L12 8 L8 12" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </a>
                 </div>
-                <div class="about-info">
-                    <div class="info-item">
-                        <span class="info-label">Location</span>
-                        <span class="info-value">Florida</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-label">Education</span>
-                        <span class="info-value">Florida State University</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-label">Languages</span>
-                        <span class="info-value">English & Spanish</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-label">Email</span>
-                        <span class="info-value">Emmamb275@gmail.com</span>
-                    </div>
+                <div class="quick-about-doodles">
+                    <svg viewBox="0 0 200 200" class="doodle-art">
+                        <!-- Brain/creative doodle -->
+                        <circle cx="100" cy="80" r="40" fill="none" stroke="#ff9147" stroke-width="3"/>
+                        <path d="M70 70 Q60 80, 70 90" fill="none" stroke="#ff9147" stroke-width="2"/>
+                        <path d="M130 70 Q140 80, 130 90" fill="none" stroke="#ff9147" stroke-width="2"/>
+                        <circle cx="90" cy="75" r="3" fill="#ff9147"/>
+                        <circle cx="110" cy="75" r="3" fill="#ff9147"/>
+                        <path d="M85 95 Q100 105, 115 95" fill="none" stroke="#ff9147" stroke-width="2"/>
+                        <!-- Light bulb -->
+                        <circle cx="100" cy="150" r="15" fill="none" stroke="#babd8d" stroke-width="2"/>
+                        <rect x="95" y="165" width="10" height="8" fill="none" stroke="#babd8d" stroke-width="2"/>
+                        <line x1="85" y1="140" x2="75" y2="135" stroke="#babd8d" stroke-width="2"/>
+                        <line x1="115" y1="140" x2="125" y2="135" stroke="#babd8d" stroke-width="2"/>
+                        <line x1="85" y1="155" x2="75" y2="160" stroke="#babd8d" stroke-width="2"/>
+                        <line x1="115" y1="155" x2="125" y2="160" stroke="#babd8d" stroke-width="2"/>
+                    </svg>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="skills">
+    <!-- Featured Skills -->
+    <section class="featured-skills">
         <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Web & App Development</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">React Native</span>
-                        <span class="skill-tag">HTML</span>
-                        <span class="skill-tag">CSS</span>
-                        <span class="skill-tag">Liquid (Shopify)</span>
-                        <span class="skill-tag">Expo</span>
-                        <span class="skill-tag">Android Studio</span>
-                        <span class="skill-tag">OpenCV</span>
+            <h2 class="section-title">What I Do Best</h2>
+            <div class="skills-showcase">
+                <div class="skill-showcase-item">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 100 100">
+                            <rect x="20" y="20" width="60" height="60" rx="5" fill="none" stroke="currentColor" stroke-width="3"/>
+                            <path d="M35 40 L45 55 L65 35" fill="none" stroke="currentColor" stroke-width="3"/>
+                        </svg>
                     </div>
+                    <h3>Frontend Development</h3>
+                    <p>React, TypeScript, HTML/CSS - Building responsive, interactive interfaces that users love</p>
                 </div>
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">C++</span>
-                        <span class="skill-tag">Linux/Unix</span>
-                        <span class="skill-tag">macOS</span>
-                        <span class="skill-tag">Windows</span>
+                <div class="skill-showcase-item">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="30" r="15" fill="none" stroke="currentColor" stroke-width="3"/>
+                            <circle cx="30" cy="70" r="15" fill="none" stroke="currentColor" stroke-width="3"/>
+                            <circle cx="70" cy="70" r="15" fill="none" stroke="currentColor" stroke-width="3"/>
+                            <line x1="50" y1="45" x2="35" y2="60" stroke="currentColor" stroke-width="3"/>
+                            <line x1="50" y1="45" x2="65" y2="60" stroke="currentColor" stroke-width="3"/>
+                        </svg>
                     </div>
+                    <h3>Full-Stack Development</h3>
+                    <p>JavaScript, React Native, APIs - From database to deployment, I handle it all</p>
                 </div>
-                <div class="skill-category">
-                    <h3>Design & Creative</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Figma</span>
-                        <span class="skill-tag">Photoshop</span>
-                        <span class="skill-tag">Illustrator</span>
-                        <span class="skill-tag">InDesign</span>
-                        <span class="skill-tag">Canva</span>
-                        <span class="skill-tag">Procreate</span>
-                        <span class="skill-tag">UI/UX Design</span>
-                        <span class="skill-tag">Branding</span>
+                <div class="skill-showcase-item">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 100 100">
+                            <rect x="25" y="25" width="50" height="50" rx="3" fill="none" stroke="currentColor" stroke-width="3"/>
+                            <circle cx="40" cy="42" r="5" fill="currentColor"/>
+                            <path d="M30 60 L50 45 L70 55" fill="none" stroke="currentColor" stroke-width="3"/>
+                        </svg>
                     </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Figma, Adobe Suite - Crafting beautiful, intuitive designs that make sense</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="experience" class="experience">
+    <!-- CTA Section -->
+    <section class="cta-section">
         <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">August 2024 - Present</span>
-                        <h3>Full Stack Developer</h3>
-                        <h4>Foundations IT</h4>
-                        <p>Developing dynamic web solutions using HTML, CSS, JavaScript, and Liquid. Building a React Native app focused on cross-platform functionality and user-friendly design. Work closely with the founder and senior developers to scope features, debug production issues, and iterate quickly based on user needs.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">May 2024 - August 2024</span>
-                        <h3>Shift Manager and Marketer</h3>
-                        <h4>Magic Tea & Coffee</h4>
-                        <p>Created promotional content and campaigns to highlight new drinks and events, supporting the shop's brand presence. Managed store operations as a shift lead while coordinating with staff to maintain a positive customer experience.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">September 2022 - January 2024</span>
-                        <h3>Co-founder and Frontend Design</h3>
-                        <h4>Logic Calendar</h4>
-                        <p>Developed a smart scheduling platform to optimize routes and scheduling for small businesses. Led the frontend design, ensuring a user-friendly interface and seamless user experience.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">May 2023 - November 2023</span>
-                        <h3>Marketing and Graphic Design Intern</h3>
-                        <h4>Bercastle OnScript AI</h4>
-                        <p>Collaborated with clients to design and market their companies. Innovated and executed design projects in a fast-paced, technology-driven environment.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">January 2019 - September 2023</span>
-                        <h3>Business Owner & Designer</h3>
-                        <h4>RamenNdraw</h4>
-                        <p>Ran a small business specializing in commissions and graphic design. Managed branding, digital storefront presence, client communication, and basic financial tracking.</p>
-                    </div>
+            <div class="cta-content">
+                <h2>Let's build something amazing together</h2>
+                <p>I'm always excited to work on new projects and collaborate with awesome people</p>
+                <div class="cta-buttons">
+                    <a href="projects.html" class="btn btn-primary">See My Projects</a>
+                    <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-icon">💡</div>
-                    <h3>Keyo Against Humanity</h3>
-                    <p class="project-role">Frontend Lead</p>
-                    <p class="project-org">AI Camp | Summer 2022</p>
-                    <p>Designed and developed the frontend of an interactive web game.</p>
-                </div>
-                <div class="project-card">
-                    <div class="project-icon">🗂️</div>
-                    <h3>OrganizeAI</h3>
-                    <p class="project-role">Project Manager</p>
-                    <p class="project-org">AI Camp | Summer 2022</p>
-                    <p>Led a small team building an AI-powered organizational tool to help users manage tasks and schedules more efficiently.</p>
-                </div>
-                <div class="project-card">
-                    <div class="project-icon">🏴‍☠️</div>
-                    <h3>Party Pirates</h3>
-                    <p class="project-role">Design Team</p>
-                    <p class="project-org">DevLUp | Fall 2024</p>
-                    <p>Designed several assets for the design aspects of the DevLUp game project Party Pirates.</p>
-                </div>
-                <div class="project-card">
-                    <div class="project-icon">🎮</div>
-                    <h3>Tosty Time</h3>
-                    <p class="project-role">3D Model and Design Team</p>
-                    <p class="project-org">JointJam | Fall 2024</p>
-                    <p>Worked with a team to design and develop a competitive party game Tosty Time.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="leadership" class="leadership">
-        <div class="container">
-            <h2 class="section-title">Leadership & Achievements</h2>
-            <div class="leadership-grid">
-                <div class="leadership-card">
-                    <h3>SEDS - President</h3>
-                    <p class="leadership-org">Florida State University</p>
-                    <p class="leadership-date">2024 - Present</p>
-                </div>
-                <div class="leadership-card">
-                    <h3>DevlUp FSU Treasurer</h3>
-                    <p class="leadership-org">Florida State University</p>
-                    <p class="leadership-date">2024 - 2025</p>
-                </div>
-                <div class="leadership-card">
-                    <h3>Care Quest Scholars Scholarship</h3>
-                    <p class="leadership-org">Florida State University</p>
-                    <p class="leadership-date">2023 - Present</p>
-                </div>
-                <div class="leadership-card">
-                    <h3>Bright Futures Scholarship</h3>
-                    <p class="leadership-org">Florida State University</p>
-                    <p class="leadership-date">2023 - Present</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
-            <p class="contact-description">I'm always open to new opportunities and collaborations!</p>
-            <div class="contact-info">
-                <a href="mailto:Emmamb275@gmail.com" class="contact-link">
-                    <span class="contact-icon">📧</span>
-                    <span>Emmamb275@gmail.com</span>
-                </a>
-                <a href="tel:+17274102055" class="contact-link">
-                    <span class="contact-icon">📱</span>
-                    <span>(727) 410-2055</span>
-                </a>
-            </div>
+            <svg class="cta-doodle" viewBox="0 0 200 200">
+                <path d="M50 100 Q100 50, 150 100" fill="none" stroke="#ff9147" stroke-width="3" opacity="0.3"/>
+                <path d="M40 120 Q100 80, 160 120" fill="none" stroke="#babd8d" stroke-width="3" opacity="0.3"/>
+                <circle cx="50" cy="100" r="5" fill="#ff9147"/>
+                <circle cx="150" cy="100" r="5" fill="#ff9147"/>
+            </svg>
         </div>
     </section>
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Emma Berry. Built with care.</p>
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; 2026 Emma Berry</p>
+                    <p class="footer-note">Built with care (and lots of coffee)</p>
+                </div>
+                <div class="footer-right">
+                    <a href="mailto:Emmamb275@gmail.com" class="footer-link">Email</a>
+                    <a href="https://github.com/EmmaVerryBerry" class="footer-link" target="_blank">GitHub</a>
+                </div>
+            </div>
         </div>
     </footer>
 
